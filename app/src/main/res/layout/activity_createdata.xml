@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="top"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Barang:" />
+
+    <EditText
+        android:id="@+id/nama_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text" />
+    <requestFocus />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Merk Barang:" />
+
+    <EditText
+        android:id="@+id/merk_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="text"></EditText>
+
+
+    <TextView
+        android:id="@+id/label3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Barang:" />
+
+    <EditText
+        android:id="@+id/harga_barang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number"></EditText>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/harga_barang"
+            android:layout_marginLeft="10dip"
+            android:hint="buttom_submit"
+            android:onClick="submit"
+            android:text="Submit" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/harga_barang"
+            android:layout_marginLeft="10dip"
+            android:hint="button_cancel"
+            android:onClick="cancel"
+            android:text="Cancel" />
+    </LinearLayout>
+
+
+</LinearLayout>
